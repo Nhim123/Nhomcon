@@ -1,4 +1,5 @@
 import React from 'react'
+import NameBox from '../components/NameBox'
 
 const Contact = () => {
   return (
@@ -9,12 +10,15 @@ const Contact = () => {
             <h1 className='font-sans text-xl font-semibold '>Contact Us</h1>
             <p className=''>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum expedita, voluptates accusamus et dolor laudantium possimus, earum dolore minus quibusdam optio deserunt ab necessitatibus illo amet vel accusantium praesentium neque?</p>
           </div>
-
-          <div className='flex flex-wrap'>
-            <div className='grid grid-cols-3 gap-4'>
-              <div></div>
-            </div>
+        </div>
+        
+        <div className='con '>
+          <div className=''>
+            <p className='pl-2'>Name</p>
+            <NameBox/>
           </div>
+
+
         </div>
       </section>
     </div>

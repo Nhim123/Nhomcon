@@ -17,7 +17,6 @@ const Services = () => {
         <div className='basis-1/5 px-5'><Product/></div>
         <div className='basis-1/5 px-5'><Product /></div>
         <div className='basis-1/5 px-5'><Product /></div>
-  
       </div>
     </div>
 
