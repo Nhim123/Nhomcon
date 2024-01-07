@@ -1,5 +1,6 @@
 import React from 'react'
-import NameBox from '../components/NameBox'
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 
 const Contact = () => {
   return (
@@ -12,14 +13,21 @@ const Contact = () => {
           </div>
         </div>
         
-        <div className='con '>
-          <div className=''>
-            <p className='pl-2'>Name</p>
-            <NameBox/>
+        <form className='grid grid-flow-row-5 grid-flow-row gap-5'>
+          <div className='row-span-3'>
+            <label className='flex flex-center pl-2 pb-1 font-sans	text-xl	'>Name</label>
+            <Box component="form" sx={{ '& .MuiTextField-root': { m: 1, width: '38ch' },}} noValidate autoComplete="off">
+              <TextField required id="outlined-required" label="Required" defaultValue="Name"/>
+            </Box>
           </div>
 
-
-        </div>
+          <div className='row-span-2 col-span-2'>
+          <label className='flex flex-center pl-2 pb-1 font-sans	text-xl	'>Name</label>
+            <Box component="form" sx={{ '& .MuiTextField-root': { m: 1, width: '38ch' },}} noValidate autoComplete="off">
+              <TextField required id="outlined-required" label="Required" defaultValue="Name"/>
+            </Box>
+          </div>
+        </form>
       </section>
     </div>
   )
