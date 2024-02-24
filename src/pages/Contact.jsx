@@ -1,6 +1,8 @@
 import React from 'react'
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import FormButton from '../components/FormButton';
+
 
 const Contact = () => {
   return (
@@ -13,21 +15,52 @@ const Contact = () => {
           </div>
         </div>
         
-        <form className='grid grid-flow-row-5 grid-flow-row gap-5'>
-          <div className='row-span-3'>
-            <label className='flex flex-center pl-2 pb-1 font-sans	text-xl	'>Name</label>
-            <Box component="form" sx={{ '& .MuiTextField-root': { m: 1, width: '38ch' },}} noValidate autoComplete="off">
-              <TextField required id="outlined-required" label="Required" defaultValue="Name"/>
+        <div className='flex flex-row'>
+        <form className='grid grid-cols-2 w-7/12 pt-7 gap-y-4	'>
+          <div className=''>
+            <label className='flex flex-center pl-2 pb-1 font-sans text-xl	'>Frist name</label>
+            <Box component="form" sx={{ '& .MuiTextField-root': { m: 1, width: '48ch' },}} noValidate autoComplete="off">
+              <TextField required id="outlined-required" label="Required" />
             </Box>
           </div>
 
-          <div className='row-span-2 col-span-2'>
-          <label className='flex flex-center pl-2 pb-1 font-sans	text-xl	'>Name</label>
-            <Box component="form" sx={{ '& .MuiTextField-root': { m: 1, width: '38ch' },}} noValidate autoComplete="off">
-              <TextField required id="outlined-required" label="Required" defaultValue="Name"/>
+          <div className=''>
+          <label className='flex flex-center pl-2 pb-1 font-sans	text-xl	'>Last name</label>
+            <Box component="form" sx={{ '& .MuiTextField-root': { m: 1, width: '42ch' },}} noValidate autoComplete="off">
+              <TextField required id="outlined-required" label="Required" />
             </Box>
           </div>
-        </form>
+
+          <div className=''>
+          <label className='flex flex-center pl-2 pb-1 font-sans	text-xl	'>Your email</label>
+            <Box component="form" sx={{ '& .MuiTextField-root': { m: 1, width: '48ch' },}} noValidate autoComplete="off">
+              <TextField required id="outlined-required" label="Required" />
+            </Box>
+          </div>
+
+          <div className=''>
+          <label className='flex flex-center pl-2 pb-1 font-sans	text-xl	'>Phone number</label>
+            <Box component="form" sx={{ '& .MuiTextField-root': { m: 1, width: '42ch' },}} noValidate autoComplete="off">
+              <TextField required id="outlined-required" label="Required" />
+            </Box>
+          </div>
+
+          <div className=''>
+          <label className='flex flex-center pl-2 pb-1 font-sans	text-xl	'>Your messages</label>
+            <Box component="form" sx={{ '& .MuiTextField-root': { m: 1, width: '92ch' },}} noValidate autoComplete="off">
+              <TextField   id="outlined-multiline-static" label="Multiline" multiline rows={4} />
+            </Box>
+          </div>
+          
+          <div className='col-span-2 pl-2 justify-center'>
+              <FormButton/>
+          </div>
+          </form>
+
+          <div className='w-5/12 pt-10 flex flex-col items-center gap-8'>
+            
+          </div>
+        </div>
       </section>
     </div>
   )

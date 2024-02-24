@@ -1,5 +1,7 @@
 import React from 'react'
 import { Product } from '../components/Product'
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 
 const Services = () => {
   return (
@@ -19,7 +21,12 @@ const Services = () => {
         <div className='basis-1/5 px-5'><Product /></div>
       </div>
     </div>
-
+      
+      <div className='flex justify-center py-8'>
+        <Stack spacing={2}>
+        <Pagination count={5} variant="outlined" />
+        </Stack>
+      </div>
   </div>
   )
 }
