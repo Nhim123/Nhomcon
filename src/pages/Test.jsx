@@ -66,7 +66,7 @@ const Test = () => {
               <img src={home} className='' alt='logo' width={70} height={70} />
             </div>
             <p className='font-sans text-xl font-bold text-center pl-20'>Company Information:</p>
-            <h1 className='font-sans text-lg pl-36 font-semibold pt-1 text-zinc-500	'>28 Hai Ba Trung, Hoan Kiem, Ha Noi</h1>
+            <h1 className='font-sans text-lg pl-36 font-semibold pt-1 '>28 Hai Ba Trung, Hoan Kiem, Ha Noi</h1>
           </div>
           
           <div>
@@ -74,7 +74,7 @@ const Test = () => {
               <img src={mail} className='' alt='logo' width={70} height={70} />
             </div>
             <p className='font-sans text-xl font-bold text-center pl-20'>Email Information:</p>
-            <h1 className='font-sans text-lg pl-48 font-semibold pt-1 text-zinc-500'>ha@hunganh.org.vn</h1>
+            <h1 className='font-sans text-lg pl-56 font-semibold pt-1'>ha@hunganh.org.vn</h1>
           </div>
           
           <div>
@@ -82,7 +82,7 @@ const Test = () => {
               <img src= {phone} className='' alt='logo' width={70} height={70} />
             </div>
             <p className='font-sans text-xl font-bold text-center pl-20'>Phone Number:</p> 
-            <h1 className='font-sans text-lg pl-52 font-semibold pt-1 text-zinc-500'>+84 098.148.3619</h1>
+            <h1 className='font-sans text-lg pl-52 font-semibold pt-1'>+84 098.148.3619</h1>
             </div>
           </div>
           

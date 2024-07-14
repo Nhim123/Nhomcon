@@ -1,0 +1,33 @@
+.step-item{
+    @apply relative flex flex-col justify-between items-center w-52
+}
+.step-item:not(:first-child):before{
+    @apply content-[''] bg-slate-200 absolute w-full h-[3px] right-2/4 top-1/3 -translate-y-2/4;
+}
+.step{
+    @apply w-20 h-20 flex items-center justify-center z-10 relative bg-slate-700 rounded-full font-semibold text-white text-3xl		
+}
+.active .step{
+    @apply bg-sky-500;
+}
+.complete .step{
+    @apply bg-green-400 w-24 h-24 rounded-full
+}
+.complete p {
+    @apply text-black
+}
+
+.complete:not(:first-child):before,
+.active:not(:first-child):before {
+    @apply bg-green-600;
+}
+
+.step-container{
+    flex-direction: row;
+}
+
+@media (max-width: 640px) {
+    .step-container{
+        flex-direction: column  ;
+    }
+}

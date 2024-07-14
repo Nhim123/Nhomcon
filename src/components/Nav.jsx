@@ -23,13 +23,13 @@ export const Nav = () => {
           <a href='/' className='text-xl font-semibold'>Home</a>
           <a href='/about' className='text-xl font-semibold'>About</a>
           <a href='/services'className='text-xl font-semibold'>Services</a>
-          <a href='/contact'className='text-xl font-semibold'>Contact Us</a>
+          <a href='/contact' className='text-xl font-semibold'>Contact Us</a>
         </ul>
 
       <div onClick={handleNav} className='block md:hidden'>
         {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20}/>}
       
-        <div className= {!nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#cbd5e1] ease' : 'fixed left-[-100%] '}>
+        <div className= {!nav ? 'fixed left-0 top-0 w-[100%] h-full border-r border-r-gray-900 bg-[#f3ba40] ' : 'fixed left-[-100%] '}>
          <ul className='uppercase p-4'>
           <li href='/' className='p-4 border-b border-gray-600'>Home</li>
           <li href='/about' className='p-4 border-b border-gray-600'>About</li>
