@@ -2,10 +2,11 @@ import React from 'react';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Grid, Autoplay, Pagination, Navigation } from 'swiper/modules';
-import Slider1 from '../assets/Carousels/1.svg';
-import Slider2 from '../assets/Carousels/2.svg';
-import Slider3 from '../assets/Carousels/3.svg';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import Slider1 from '../assets/Carousels/Aws.svg';
+import Slider2 from '../assets/Carousels/Lapua.svg';
+import Slider3 from '../assets/Carousels/Oracle.svg';
+import Slider4 from '../assets/Carousels/Redhat.svg';
 
 
 // Import Swiper styles
@@ -19,27 +20,30 @@ export const Carousel = () => {
  
   return (
     <Swiper
+        slidesPerView={6}
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 1000,
           disableOnInteraction: false,
         }}
         pagination={{
           clickable: true,
         }}
-        grid={{
-          rows: 5,
-        }}
+       
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation, Grid]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide className='flex items-center w-96 h-96'><img src= {Slider1} /></SwiperSlide>
-        <SwiperSlide className='flex items-center w-96 h-96'><img src= {Slider2} /></SwiperSlide>
-        <SwiperSlide className='flex items-center w-96 h-96'><img src= {Slider1} /></SwiperSlide>
-        <SwiperSlide className='flex items-center w-96 h-96'><img src= {Slider3} /></SwiperSlide>
-        
+      <div className='flex items-center justify-center'>
+        <div class="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80">
+        <SwiperSlide className='w-full h-full object-contain '><img src={Slider1} /></SwiperSlide>
+        <SwiperSlide className='w-full h-full object-contain'><img src= {Slider2} /></SwiperSlide>
+        <SwiperSlide className='w-full h-full object-contain'><img src= {Slider3} /></SwiperSlide>
+        <SwiperSlide className='w-full h-full object-contain'><img src= {Slider4} /></SwiperSlide>
+        </div>
+      </div>
+       
       </Swiper>
   )
 }

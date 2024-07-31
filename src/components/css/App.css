@@ -1,0 +1,9 @@
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Đảm bảo các mục phân trang hiển thị theo hàng ngang */
+  }
+  
