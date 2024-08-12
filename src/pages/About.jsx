@@ -28,7 +28,7 @@ const About = () => {
           <img src={about} alt="logo" width={500} height={500}/>
           </div>
         </div>
-        <div className='bg-sky-300 w-screen'>
+        <div className='bg-teal-300  w-screen'>
           <div className='items-center'> <Pagination/></div>
         
         </div>

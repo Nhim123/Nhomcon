@@ -32,18 +32,14 @@ export const Carousel = () => {
         }}
        
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation]}  
         className="mySwiper"
       >
-      <div className='flex items-center justify-center'>
-        <div class="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80">
-        <SwiperSlide className='w-full h-full object-contain '><img src={Slider1} /></SwiperSlide>
-        <SwiperSlide className='w-full h-full object-contain'><img src= {Slider2} /></SwiperSlide>
-        <SwiperSlide className='w-full h-full object-contain'><img src= {Slider3} /></SwiperSlide>
-        <SwiperSlide className='w-full h-full object-contain'><img src= {Slider4} /></SwiperSlide>
-        </div>
+      <div className='flex justify-between items-center'>
+        <SwiperSlide><svg src={Slider1} viewBox='0 0 100 100'></svg></SwiperSlide>
+        <SwiperSlide><svg src={Slider2}/></SwiperSlide>
+        <SwiperSlide><svg src={Slider3}/></SwiperSlide>
       </div>
-       
       </Swiper>
   )
 }

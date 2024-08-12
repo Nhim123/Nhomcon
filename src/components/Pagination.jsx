@@ -2,6 +2,8 @@ import React, { useEffect, useState }  from 'react'
 import ReactDOM from 'react-dom';
 import ReactPaginate from 'react-paginate';
 import Pagination1 from "./Smallcomponent/Pagination1";
+import Pagination2 from './Smallcomponent/Pagination2';
+import Pagination3 from './Smallcomponent/Pagination3';
 import {  } from "../components/css/App.css";
 
 
@@ -19,15 +21,15 @@ const Pagination = (page) => {
       case 0:
         return <div><Pagination1/></div>;
       case 1:
-        return <div>Trang 2: Nội dung trang 2</div>;
+        return <div><Pagination2/></div>;
       case 2:
-        return <div>Trang 3: Nội dung trang 3</div>;
+        return <div><Pagination3/></div>;
     }
   };
 
   return (
     <div className="App">
-      <ReactPaginate
+      <ReactPaginate 
        previousLabel={"Previous"}
        nextLabel={"Next"}
        breakLabel={"..."}
