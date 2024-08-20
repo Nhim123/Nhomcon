@@ -1,11 +1,9 @@
 import React, { useEffect, useState }  from 'react'
-import ReactDOM from 'react-dom';
 import ReactPaginate from 'react-paginate';
 import Pagination1 from "./Smallcomponent/Pagination1";
 import Pagination2 from './Smallcomponent/Pagination2';
 import Pagination3 from './Smallcomponent/Pagination3';
 import {  } from "../components/css/App.css";
-
 
 const Pagination = (page) => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -30,8 +28,8 @@ const Pagination = (page) => {
   return (
     <div className="App">
       <ReactPaginate 
-       previousLabel={"Previous"}
-       nextLabel={"Next"}
+        previousLabel={null}
+        nextLabel={null}
        breakLabel={"..."}
        breakClassName={"break-me"}
        pageCount={pageLabels.length}
