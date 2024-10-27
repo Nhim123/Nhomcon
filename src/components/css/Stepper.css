@@ -11,15 +11,15 @@
     @apply bg-sky-500;
 }
 .complete .step{
-    @apply bg-green-400 w-24 h-24 rounded-full
+    @apply bg-cyan-400 w-24 h-24 rounded-full
 }
 .complete p {
-    @apply text-black
+    @apply text-orange-800 text-lg
 }
 
 .complete:not(:first-child):before,
 .active:not(:first-child):before {
-    @apply bg-green-600;
+    @apply bg-cyan-300;
 }
 
 .step-container{

@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 import ReactPaginate from 'react-paginate';
 import Ai  from './Servicecomponent/Ai.jsx';
 import Webapp  from './Servicecomponent/Webapp.jsx'
-import Iot  from './Servicecomponent/Iot.jsx'
-import Mobbileapp from './Servicecomponent/Mobbileapp.jsx';
+import Mobileapp  from './Servicecomponent/Mobileapp.jsx'
+import Supplychain from './Servicecomponent/Supplychain.jsx';
 import { } from "../components/css/App.css";
 
 const Paginationservice = (page) => {
   const [currentPage, setCurrentPage] = useState(0);
-  const pageLabels = ['Ai', 'Website', 'Iot', 'Supply Chain Management']; // Tổng số trang
+  const pageLabels = ['Supply Chain Management','Ai', 'Website-app', 'Mobile-app']; // Tổng số trang
   
   const handlePageClick = (data) => {
     setCurrentPage(data.selected);
@@ -18,13 +18,13 @@ const Paginationservice = (page) => {
   const renderPageContent = (pageIndex) => {
     switch (pageIndex) {
       case 0:
-        return <div><Ai/></div>;
+        return <div><Supplychain/></div>;
       case 1:
-        return <div><Webapp/></div>;
+        return <div><Ai/></div>;
       case 2:
-        return <div><Iot /></div>;
+        return <div><Webapp/></div>;
       case 3:
-          return <div><Mobbileapp/></div>;
+        return <div><Mobileapp/></div>;
     }
   };
 

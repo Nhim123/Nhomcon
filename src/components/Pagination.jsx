@@ -1,8 +1,8 @@
 import React, { useEffect, useState }  from 'react'
 import ReactPaginate from 'react-paginate';
-import Pagination1 from "./Smallcomponent/Pagination1";
-import Pagination2 from './Smallcomponent/Pagination2';
-import Pagination3 from './Smallcomponent/Pagination3';
+import Pagination1 from "./Aboutcomponent/Pagination1";
+import Pagination2 from './Aboutcomponent/Pagination2';
+import Pagination3 from './Aboutcomponent/Pagination3';
 import {  } from "../components/css/App.css";
 
 const Pagination = (page) => {
