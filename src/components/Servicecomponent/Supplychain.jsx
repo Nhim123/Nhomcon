@@ -6,28 +6,6 @@ import Image from '../Supplychain/Image';
 
 const Supplychain = () => {
 
-  const [refresh, setRefresh] = useState(false);
-
-  // Hàm để kích hoạt hiệu ứng khi refresh
-  const handleRefresh = () => {
-    setRefresh(true);
-    setTimeout(() => setRefresh(false), 100); // Tắt refresh sau khi chạy xong animation
-  };
-
-  // useEffect để phát hiện kéo để làm mới (pull-to-refresh)
-  useEffect(() => {
-    const onRefresh = () => {
-      handleRefresh();
-    };
-
-    window.addEventListener('scroll', () => {
-      if (window.scrollY === 0) onRefresh(); // Khi kéo lên đỉnh trang, chạy lại hiệu ứng
-    });
-
-    return () => window.removeEventListener('scroll', onRefresh);
-  }, []);
-
-
   return (
     <div>
       <div className='w-full max-w-[1240px] mx-auto pb-5'>
@@ -44,20 +22,27 @@ const Supplychain = () => {
         </div>
         </div>
       </div>  
-      <div className='bg-yellow-50 max-w[1240px] '>
+
+      <div className='bg-yellow-50 '>
         <h1 className='underline flex uppercase font-palanquin font-bold text-3xl justify-center underline-offset-8 text-orange-800 pt-6'>the progess</h1>
         <div className=' flex justify-center pt-8 pb-20'><Stepper /></div>
-      </div>
-
-      <div className='bg-orange-100'>
-        <div className={`animated-text ${refresh ? 'animate' : ''}`}>
-          <div className='w-full max-w-[1640px] mx-auto py-20'>
-          <Image/>
+        <div className='grid grid-rows-2 '>
+          <div className='w-full max-w-[1536px] mx-auto'>
+            <h1 className='font-light font-quicksand text-4xl text-stone-400 mx-auto text-start'>Our Solution</h1>
+          </div>
+          <div className='flex justify-center pt-10'>
+            <div className='font-quicksand font-light text-2xl max-w-screen-sm grid grid-cols-4 space-x-8'>
+              <h1>Safe</h1>
+              <h1>Efficient</h1>
+              <h1>Economic</h1>
+              <h1>Sustainable</h1>
+            </div>
           </div>
         </div>
-        
+        <div className='w-full container mx-auto py-20'>
+          <Image/>
+          </div>
       </div>
-  
     </div>
   )
 }

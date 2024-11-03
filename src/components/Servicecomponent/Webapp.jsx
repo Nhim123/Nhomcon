@@ -7,7 +7,7 @@ import Time from "../css/Website/time.svg"
 import Trophy from "../css/Website/trophy.svg"
 import Security from "../css/Website/security.svg"
 import Group from "../css/Website/group.svg"
-
+import Technology from "../Mobileapp/Technology"
 const Webapp = () => {
   return (
     <div>
@@ -24,6 +24,9 @@ const Webapp = () => {
           <p className='py-5 leading-7'>AI also plays an important part in every side of businesses, remodeling the ways of producing, manufacturing, and delivering services. Gain competitive advantages by understanding priorities, inclinations, and decision-making processes with the help of AI-powered solutions. Being one of the competitive AI service providers, VMO proudly delivers cutting-edge AI solutions to automate your business processes and operations to drive growth and efficiency, leveraging advanced methodologies such as machine learning, natural language processing, image recognition…</p>
           </div>
         </div>
+      </div>
+      
+      <div className='w-full max-w-[1240px] mx-auto '>
         <div className='grid grid-cols-3 py-20 space-x-10 '>
         <div>
           <Paper className='flex justify-center'>
@@ -41,7 +44,7 @@ const Webapp = () => {
                 <img src={Calculator} width={100} height={100} />
               </div>  
               <h1 className='font-roboto font-extrabold uppercase pt-4 text-wrap'>Cost Optimization
-</h1>
+        </h1>
             </div>
           </Paper>
         </div>
@@ -93,6 +96,11 @@ const Webapp = () => {
         </div> 
       </div>
       </div>
+
+      
+        <div className=' '>
+          <Technology/>
+        </div>
    </div>
   )
 }

@@ -9,6 +9,7 @@ import Security from '../css/Mobbile-app/Security.svg'
 
 const Mobileapp = () => {
   return (
+    <div>
     <div className='w-full max-w-[1240px] mx-auto pb-5'>
       <h1 className='flex justify-center py-6 uppercase font-palanquin font-bold text-3xl'>Mobile-Application Development</h1>
       <div className='grid grid-cols-2 '>
@@ -21,17 +22,11 @@ const Mobileapp = () => {
           </p>
           <p className='py-5 leading-7'>AI also plays an important part in every side of businesses, remodeling the ways of producing, manufacturing, and delivering services. Gain competitive advantages by understanding priorities, inclinations, and decision-making processes with the help of AI-powered solutions. Being one of the competitive AI service providers, VMO proudly delivers cutting-edge AI solutions to automate your business processes and operations to drive growth and efficiency, leveraging advanced methodologies such as machine learning, natural language processing, image recognition…</p>
           </div>
-      </div>
-
-      <div className=''>
-        <h1 className='flex justify-center uppercase font-roboto text-3xl font-extrabold text-yellow-800'>Technology Stack</h1>
-        <div className='grid grid-cols-4'>
-          <div>Database</div>
-          <div>Infrastructure</div>
-          <div>Frontend</div>
-          <div>Backend</div>
         </div>
-      </div>
+        </div>  
+
+      
+      <div className='w-full max-w-[1240px] mx-auto pb-5' >
       <div className='grid grid-cols-3 py-20 '>
         <div className='grid grid-cols space-y-2'>
           <div className='flex justify-center'>
@@ -56,9 +51,8 @@ const Mobileapp = () => {
           <h1 className='text-center font-roboto font-extrabold uppercase pt-4 align-top'> Android App Development</h1>
           <p className='text-center font-roboto'>Android-based devices are taking the majority of the market share, making it crucial to develop an Android app. We have experience in designing, developing and deploying Android apps</p> 
         </div>
-      </div>
-
-
+        </div>
+        
       <div className='grid grid-cols-3 pb-10 '>
         <div className='grid grid-cols space-y-2'>
           <div className='flex justify-center'>
@@ -84,9 +78,9 @@ const Mobileapp = () => {
           <p className='text-center font-roboto'>Android-based devices are taking the majority of the market share, making it crucial to develop an Android app. We have experience in designing, developing and deploying Android apps</p> 
         </div>
       </div>
-
-
-    </div>
+      </div>
+    
+      </div> 
   )
 }
 

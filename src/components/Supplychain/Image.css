@@ -1,6 +1,5 @@
 .image-container {
   position: relative;
-  
 }
 
 .background-image {
@@ -10,14 +9,15 @@
 
 .slide-in-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 40%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-  clip-path: inset(0 100% 0 0); /* Ban đầu ẩn hoàn toàn */
+  clip-path: inset(0 50% 0 0); /* Ban đầu ẩn hoàn toàn */
   animation: slideIn 3s ease forwards;
+}
+.slide-in-text.animate {
+  animation: slideInFromLeft 2s ease forwards;
 }
 
 @keyframes slideIn {
