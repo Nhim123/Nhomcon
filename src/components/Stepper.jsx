@@ -33,7 +33,7 @@ const Stepper = () => {
           >
             <div className="step">
               {i + 1}</div>
-            <p className='text-white font-semibold	'>{step}</p>
+            <p className='text-slate-900 font-semibold	'>{step}</p>
           </div>
       ))}  
       </div>

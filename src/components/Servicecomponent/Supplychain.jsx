@@ -23,7 +23,7 @@ const Supplychain = () => {
         </div>
       </div>  
 
-      <div className='bg-yellow-50 '>
+      <div className=''>
         <h1 className='underline flex uppercase font-palanquin font-bold text-3xl justify-center underline-offset-8 text-orange-800 pt-6'>the progess</h1>
         <div className=' flex justify-center pt-8 pb-20'><Stepper /></div>
         <div className='grid grid-rows-2 '>
