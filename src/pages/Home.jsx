@@ -1,30 +1,21 @@
 import React from 'react'
-import {Carousel}  from '../components/Carousel';
-import {Product} from '../components/Product';
 import Hero from '../components/Hero';
-import Homebox from '../components/Homebox';
+import CountHome from '../components/Homecomponent/CountingHome';
 
 const Home = () => {
   return (
-    <div className='mx-auto w-screen'>
-      <Hero />
-      
-      <div className='w-screen flex flex-row justify-center'>
-      <div className=' flex flex-wrap py-10 justify-center '>
-        <div className='basis-1/5 px-3'><Product/></div>
-        <div className='basis-1/5 px-5'><Product/></div>
-        <div className='basis-1/5 px-5'><Product /></div>
-      </div>
-    </div>
-      
-      <div className='py-10'>
-        <Carousel/>
-      </div>
-
-      <div>
-        <Homebox/>
-      </div>
     
+    <div className=' '>
+      <Hero />
+      <div className='mx-auto max-w-[1240px]'>
+        <div className='grid grid-cols-2'>
+          <div className='w-84'>
+          <p className='font-semibold font-poppin text-3xl py-3 text-cyan-400'>Our Services</p>
+          </div>
+        </div>
+      </div>
+      
+      <CountHome/>
     </div>
   )
 }

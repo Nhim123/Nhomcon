@@ -17,7 +17,7 @@
     "@mui/icons-material": "^5.15.5",
     "@mui/material": "^5.14.9",
     "@mui/styled-engine-sc": "^5.14.9",
-    "caniuse-lite": "^1.0.30001591",
+    "@react-spring/web": "^9.7.5",
     "chart.js": "^4.4.3",
     "flowbite": "^2.0.0",
     "flowbite-react": "^0.6.4",

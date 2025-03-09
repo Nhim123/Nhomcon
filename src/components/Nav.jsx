@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import  headerLogo  from "../assets/headerLogo.svg";
+import  Logo  from "../assets/Logo.svg";
 import { AiOutlineMenu , AiOutlineClose } from "react-icons/ai";
 
 export const Nav = () => {
@@ -10,13 +10,13 @@ export const Nav = () => {
   }
 
   return (
-  
-      <nav className='grid grid-cols-2 max-container'>
+    <div className='w-full max-w-[1240px] mx-auto'>
+    <nav className='grid grid-cols-2 max-container my-10'>
        <a href = '/'>
-          <img src= {headerLogo} 
+          <img src= {Logo} 
           alt='logo'
-          width={100}
-          height={29}
+          width={250}
+          height={250}
           />
         </a>
         <ul className=' flex justify-end items-center gap-16 max-lg:hidden'>
@@ -40,6 +40,9 @@ export const Nav = () => {
         </div>
       </div>
       </nav>
+    </div>
+    
+      
 
   )
 }

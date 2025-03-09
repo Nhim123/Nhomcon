@@ -6,7 +6,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import Slider1 from '../assets/Carousels/Aws.svg';
 import Slider2 from '../assets/Carousels/Lapua.svg';
 import Slider3 from '../assets/Carousels/Oracle.svg';
-import Slider4 from '../assets/Carousels/Redhat.svg';
+
 
 
 // Import Swiper styles
@@ -36,7 +36,7 @@ export const Carousel = () => {
         className="mySwiper"
       >
       <div className='flex justify-between items-center'>
-        <SwiperSlide><svg src={Slider1} viewBox='0 0 100 100'></svg></SwiperSlide>
+        <SwiperSlide><svg src={Slider1}/></SwiperSlide>
         <SwiperSlide><svg src={Slider2}/></SwiperSlide>
         <SwiperSlide><svg src={Slider3}/></SwiperSlide>
       </div>
