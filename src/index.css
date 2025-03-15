@@ -57,4 +57,11 @@
     @apply font-montserrat text-slate-gray text-lg leading-7;
   }
   
+  .custom-blue-bg {
+    @apply bg-customBlue;
+  }
+
+  .custom-blue-text {
+    @apply text-customBlue;
+  }
 }
