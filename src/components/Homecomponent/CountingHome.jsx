@@ -18,7 +18,7 @@ const Counter = ({ target }) => {
   }, [isComplete]);
 
   return (
-    <div className='font-bold text-3xl'>  
+    <div className='font-bold text-4xl'>  
       <animated.span>
       {number.to((n) => Math.floor(n))}
       </animated.span>
@@ -32,41 +32,53 @@ const Counter = ({ target }) => {
 };
 
 const CountingHome = () => {
-    return (
-    <div className='bg-sky-700'>
-        <div className='mx-auto max-w-[1240px] '>
-          <div className='grid grid-cols-3 text-3xl font-poppin text-white '>
-                <div className='grid grid-row-2 text-center'>
-                    <Counter target={40}/>
-                    <p>Global Clients</p>
-                </div>
-                <div className='grid grid-row-2 text-center'>
-                    <Counter target={650}/>
-                    <p>Partnership</p>
-              </div>
-            
-              <div className=' grid grid-row-2 text-center'>
-                    <Counter target={700}/>
-                    <p>Projects Completed</p>
-            </div>
-            
-            <div className=' grid grid-row-2 text-center'>
-                    <Counter target={25}/>
-                    <p>Projects Completed</p>
-            </div>
-            
-            <div className=' grid grid-row-2 text-center'>
-                    <Counter target={700}/>
-                    <p>Projects Completed</p>
-            </div>
-            
-            <div className=' grid grid-row-2 text-center'>
-                    <Counter target={700}/>
-                    <p>Projects Completed</p>
-              </div>
+  return (
+    <div>
+       
+      
+      <div className='bg-BabyBlue'>
+          <div className='mx-auto max-w-[1240px]'>
+                  <div className='grid grid-cols-2'>
+                    <div className='w-84'>
+                    <p className='font-semibold font-poppin text-4xl py-3 text-white'>Our Services</p>
+                    </div>
+                  </div>
           </div>
-      </div>        
+        
+          <div className='mx-auto max-w-[1240px] '>
+          <div className='grid grid-cols-3'>
+            <div>
+              <img src="" alt="" />
+            </div>
+            <div className='grid grid-rows-2 font-poppin text-white text-3xl py-4'>  
+                  <div className='grid grid-row-2 text-center'>
+                      <Counter target={40}/>
+                      <p>Global Clients</p>
+                   </div>
+              
+                  <div className='grid grid-row-2 text-center'>
+                      <Counter target={650}/>
+                      <p>Partnership</p>
+              </div>
+            </div>
+            <div className='grid grid-rows-2 font-poppin text-white text-3xl py-4'>   
+                  <div className=' grid grid-row-2 text-center'>
+                        <Counter target={700} />
+                        <p>Talents</p>
+                  </div>
+              
+                  <div className=' grid grid-row-2 text-center'>
+                        <Counter target={700}/>
+                        <p>Talents</p>
+                  </div>
+            </div>
+                  
+            
+            </div>
+        </div>        
+      </div>
     </div>
+     
   )
 }
 
