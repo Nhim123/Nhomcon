@@ -22,6 +22,10 @@ export default {
         montserrat: ['Montserrat', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
         poppin: ['Poppin', 'san-serif'], 
+        BigShoulders: ['BigShoulders Display', 'sans-serif'],
+        Playfair: ['Playfair Display', 'serif'],
+        Rubik: ['Rubik', 'sans-serif'],
+        NunitoSans: ['Nunito Sans', 'sans-serif']
       },
       colors: {
         'primary': "#ECEEFF",

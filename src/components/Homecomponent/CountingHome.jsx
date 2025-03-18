@@ -18,7 +18,7 @@ const Counter = ({ target }) => {
   }, [isComplete]);
 
   return (
-    <div className='font-bold text-4xl'>  
+    <div className='font-bold text-2xl'>  
       <animated.span>
       {number.to((n) => Math.floor(n))}
       </animated.span>
@@ -38,19 +38,10 @@ const CountingHome = () => {
       
       <div className='bg-BabyBlue'>
           <div className='mx-auto max-w-[1240px]'>
-                  <div className='grid grid-cols-2'>
-                    <div className='w-84'>
-                    <p className='font-semibold font-poppin text-4xl py-3 text-white'>Our Services</p>
-                    </div>
-                  </div>
-          </div>
-        
-          <div className='mx-auto max-w-[1240px] '>
-          <div className='grid grid-cols-3'>
-            <div>
-              <img src="" alt="" />
-            </div>
-            <div className='grid grid-rows-2 font-poppin text-white text-3xl py-4'>  
+                 
+          <p className='font-semibold font-poppin text-3xl py-3 text-white uppercase text-center'>Our Services</p>
+          
+            <div className='grid grid-cols-4 font-poppin text-white text-3xl py-4'>  
                   <div className='grid grid-row-2 text-center'>
                       <Counter target={40}/>
                       <p>Global Clients</p>
@@ -59,25 +50,21 @@ const CountingHome = () => {
                   <div className='grid grid-row-2 text-center'>
                       <Counter target={650}/>
                       <p>Partnership</p>
-              </div>
-            </div>
-            <div className='grid grid-rows-2 font-poppin text-white text-3xl py-4'>   
+                  </div>
+ 
                   <div className=' grid grid-row-2 text-center'>
                         <Counter target={700} />
                         <p>Talents</p>
                   </div>
               
                   <div className=' grid grid-row-2 text-center'>
-                        <Counter target={700}/>
+                        <Counter target={52}/>
                         <p>Talents</p>
                   </div>
-            </div>
-                  
-            
+                  </div>
             </div>
         </div>        
       </div>
-    </div>
      
   )
 }
