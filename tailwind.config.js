@@ -25,7 +25,8 @@ export default {
         BigShoulders: ['BigShoulders Display', 'sans-serif'],
         Playfair: ['Playfair Display', 'serif'],
         Rubik: ['Rubik', 'sans-serif'],
-        NunitoSans: ['Nunito Sans', 'sans-serif']
+        NunitoSans: ['Nunito Sans', 'sans-serif'],
+        Nunito: ['Nunito', 'sans-serif'],
       },
       colors: {
         'primary': "#ECEEFF",
@@ -35,6 +36,8 @@ export default {
         "white-400": "rgba(255, 255, 255, 0.80)",
         "customBlue": '#007FFF',
         "BabyBlue": "#0070FF",
+        "MintCream": "#F5FFFA",
+        "AliceBlue": "#F0F8FF",
       },
       boxShadow: {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'

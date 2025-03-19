@@ -36,18 +36,16 @@ const CountingHome = () => {
     <div>
        
       
-      <div className='bg-BabyBlue'>
+      <div className='bg-customBlue'>
           <div className='mx-auto max-w-[1240px]'>
-                 
-          <p className='font-semibold font-poppin text-3xl py-3 text-white uppercase text-center'>Our Services</p>
-          
-            <div className='grid grid-cols-4 font-poppin text-white text-3xl py-4'>  
-                  <div className='grid grid-row-2 text-center'>
+          <p className='font-semibold font-poppin text-3xl py-3 text-white text-start'>Our Customers</p>
+            <div className='grid grid-cols-3 font-poppin text-white text-3xl py-4'>  
+                  <div className='grid grid-row-2 text-center '>
                       <Counter target={40}/>
                       <p>Global Clients</p>
                    </div>
               
-                  <div className='grid grid-row-2 text-center'>
+                  <div className='grid grid-row-2 text-center '>
                       <Counter target={650}/>
                       <p>Partnership</p>
                   </div>
@@ -56,11 +54,7 @@ const CountingHome = () => {
                         <Counter target={700} />
                         <p>Talents</p>
                   </div>
-              
-                  <div className=' grid grid-row-2 text-center'>
-                        <Counter target={52}/>
-                        <p>Talents</p>
-                  </div>
+            
                   </div>
             </div>
         </div>        

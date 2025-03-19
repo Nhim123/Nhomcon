@@ -83,7 +83,7 @@ const Test = () => {
                   <img src={phone} width={80} height={80} />
                 </div>
               <p className='flex justify-center font-sans text-xl font-bold text-center'>Phone Number:</p>
-              <h1 className=' flex justify-center font-sans text-lg font-semibold pt-1 text-zinc-500	'>+84 098.148.3619</h1>
+              <h1 className=' flex justify-center font-sans text-lg font-semibold pt-1 text-zinc-500	'>+84 375 813 299</h1>
             </div>
         </div>
       </div>
