@@ -36,7 +36,7 @@ const CountingHome = () => {
     <div>
        
       
-      <div className='bg-BabyBlue'>
+      <div className='bg-customBlue'>
           <div className='mx-auto max-w-[1240px]'>
                  
           <p className='font-semibold font-poppin text-3xl py-3 text-white uppercase text-center'>Our Services</p>
