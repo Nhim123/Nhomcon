@@ -30,7 +30,7 @@ const Paginationservice = (page) => {
 
   return (
     <div className="App">
-      <div className='w-screen bg-emerald-100 pt-2 flex justify-center'>
+      <div className='w-screen bg-customBlue pt-2 flex justify-center'>
         <ReactPaginate 
           breakLabel={"..."}
           previousLabel={null}
