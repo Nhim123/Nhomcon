@@ -6,7 +6,8 @@ import Target from "../css/Services/Target.svg"
 import Startup from "../css/Services/Startup.svg"
 import Brain from "../css/Services/Brain.svg"
 import Hour from "../css/Services/24h.png";
-import Smile from "../css/Services/Smile.svg"
+import Smile from "../css/Services/Smile.svg";
+import { } from "../css/App.css";
 
 const Ai = () => {
   return (

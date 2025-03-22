@@ -7,7 +7,10 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Test from "./pages/Test";
-
+import Supplychain from './components/Servicecomponent/Supplychain';
+import Ai from './components/Servicecomponent/Ai';
+import Webapp from './components/Servicecomponent/Webapp';
+import Mobileapp from './components/Servicecomponent/Mobileapp';
 
 const App = () => {
   return (
@@ -20,6 +23,10 @@ const App = () => {
         <Route path ='/Services' element = {<Services/>}/>
         <Route path='/Contact' element={<Contact />} />
         <Route path='/Test' element={<Test />} />
+        <Route path='/services/supplychain' element={<Supplychain />} />
+        <Route path='/services/ai' element={<Ai />} />
+        <Route path='/services/webapp' element={<Webapp />} />
+        <Route path='/services/mobileapp' element={<Mobileapp />} />
       </Routes>
       <Footer/>
     </>
