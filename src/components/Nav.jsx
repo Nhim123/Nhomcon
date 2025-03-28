@@ -3,7 +3,8 @@ import  Logo  from "../assets/Logo.svg";
 import { AiOutlineMenu , AiOutlineClose } from "react-icons/ai";
 
 export const Nav = () => {
-  const [nav, setNav] = useState(false)
+  const [nav, setNav] = useState(false);
+  const [dropdown, setDropdown] = useState(false); // Add state for dropdown
 
   const handleNav = () => {
     setNav(!nav);
@@ -39,7 +40,6 @@ export const Nav = () => {
               )}
             </div>
             <a href='/about' className='text-xl font-semibold'>About</a>
-            <a href='/services'className='text-xl font-semibold'>Services</a>
             <a href='/contact' className='text-xl font-semibold'>Contact Us</a>
           </ul>
           <div onClick={handleNav} className='block md:hidden'>

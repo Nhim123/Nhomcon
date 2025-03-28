@@ -6,7 +6,7 @@ import home from '../assets/Icons/home.svg'
 import mail from '../assets/Icons/mail.svg'
 import phone from '../assets/Icons/phone.svg'
 
-const Test = () => {
+const Contact = () => {
   return (
      <div className='w-full max-w-[1240px] mx-auto mb-10'>
          <div className='flex justify-center '>
@@ -20,7 +20,7 @@ const Test = () => {
         <div className='grid grid-row-3'>
         <div className='basis-1/4 sm:flex-col'>
           <div className='py-3'>
-            <label className='flex flex-center pl-2 pb-1 font-sans text-xl	'>Frist name</label>
+            <label className='flex flex-center pl-2 pb-1 font-sans text-xl	'>First name</label>
             <Box component="form" sx={{ '& .MuiTextField-root': { m: 1, width: '40ch' },}} noValidate autoComplete="off">
             <TextField required id="outlined-required" label="Required" />
             </Box>
@@ -91,4 +91,4 @@ const Test = () => {
   )
 }
 
-export default Test
+export default Contact
