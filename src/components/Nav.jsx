@@ -4,7 +4,6 @@ import { AiOutlineMenu , AiOutlineClose } from "react-icons/ai";
 
 export const Nav = () => {
   const [nav, setNav] = useState(false)
-git c  const [dropdown, setDropdown] = useState(false); // Add this line
 
   const handleNav = () => {
     setNav(!nav);
@@ -40,7 +39,6 @@ git c  const [dropdown, setDropdown] = useState(false); // Add this line
               )}
             </div>
             <a href='/about' className='text-xl font-semibold'>About</a>
-            <a href='/services'className='text-xl font-semibold'>Services</a>
             <a href='/contact' className='text-xl font-semibold'>Contact Us</a>
           </ul>
           <div onClick={handleNav} className='block md:hidden'>
