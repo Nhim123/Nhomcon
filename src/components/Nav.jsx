@@ -4,7 +4,7 @@ import { AiOutlineMenu , AiOutlineClose } from "react-icons/ai";
 
 export const Nav = () => {
   const [nav, setNav] = useState(false)
-  const [dropdown, setDropdown] = useState(false); // Add this line
+git c  const [dropdown, setDropdown] = useState(false); // Add this line
 
   const handleNav = () => {
     setNav(!nav);
