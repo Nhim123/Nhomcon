@@ -7,39 +7,34 @@ import Slider1 from '../assets/Carousels/Aws.svg';
 import Slider2 from '../assets/Carousels/Lapua.svg';
 import Slider3 from '../assets/Carousels/Oracle.svg';
 
-
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-
 export const Carousel = () => {
- 
   return (
     <Swiper
-        slidesPerView={6}
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 1000,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-       
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}  
-        className="mySwiper"
-      >
+      slidesPerView={6}
+      spaceBetween={30}
+      centeredSlides={true}
+      autoplay={{
+        delay: 1000,
+        disableOnInteraction: false,
+      }}
+      pagination={{
+        clickable: true,
+      }}
+      navigation={true}
+      modules={[Autoplay, Pagination, Navigation]}
+      className="mySwiper"
+    >
       <div className='flex justify-between items-center'>
         <SwiperSlide><svg src={Slider1}/></SwiperSlide>
         <SwiperSlide><svg src={Slider2}/></SwiperSlide>
         <SwiperSlide><svg src={Slider3}/></SwiperSlide>
       </div>
-      </Swiper>
+    </Swiper>
   )
 }

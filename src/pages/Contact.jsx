@@ -6,7 +6,7 @@ import home from '../assets/Icons/home.svg'
 import mail from '../assets/Icons/mail.svg'
 import phone from '../assets/Icons/phone.svg'
 
-const Test = () => {
+const Contact = () => {
   return (
      <div className='w-full max-w-[1240px] mx-auto mb-10'>
          <div className='flex justify-center '>
@@ -91,4 +91,4 @@ const Test = () => {
   )
 }
 
-export default Test
+export default Contact
