@@ -2,6 +2,7 @@ import { useRef, useEffect} from 'react';
 import React from 'react';
 import { Paper } from '@mui/material';
 import About1 from '../components/Aboutcomponent/About1/About1.jsx';
+import Services from '../components/Aboutcomponent/Services.jsx';
 
 
 
@@ -41,6 +42,11 @@ const About = () => {
         <div className='flex justify-center py-4'>
             <About1 position="right" />
         </div>
+        
+        <div className='flex justify-center py-4'>
+          <Services/>
+        </div>
+
         <div className='space-y-4'>
           <p className='font-Nunito text-3xl font-bold pb-4 '>Who is our customer ?</p>
           <div className='grid grid-cols-3 space-x-5'>

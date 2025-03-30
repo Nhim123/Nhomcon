@@ -3,7 +3,8 @@ import  Logo  from "../assets/Logo.svg";
 import { AiOutlineMenu , AiOutlineClose } from "react-icons/ai";
 
 export const Nav = () => {
-  const [nav, setNav] = useState(false)
+  const [nav, setNav] = useState(false);
+  const [dropdown, setDropdown] = useState(false); // Added dropdown state
 
   const handleNav = () => {
     setNav(!nav);
