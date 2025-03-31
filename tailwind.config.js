@@ -38,6 +38,7 @@ export default {
         "BabyBlue": "#0070FF",
         "MintCream": "#F5FFFA",
         "AliceBlue": "#F0F8FF",
+        "Paleazure" :"#87D3F8"
       },
       boxShadow: {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'

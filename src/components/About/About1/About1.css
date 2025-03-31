@@ -3,12 +3,13 @@
   position: relative;
   width: 900px; /* Chiều rộng của hình chữ nhật */
   height: 100px; /* Chiều cao của hình chữ nhật */
-  background-color: #ffffff; /* Màu nền của hình chữ nhật */
+  background: linear-gradient(to bottom, #ffffff 50%, #add8e6 50%); /* Chia nền thành 2 màu */
+  border: 5px solid transparent; /* Đặt viền trong suốt */
+  background-clip: padding-box; /* Đảm bảo viền nằm trên cả hai phần */
   border-radius: 50px; /* Bo tròn hai đầu hình chữ nhật */
   display: flex;
   align-items: center;
   padding-left: 110px;
-  border: 5px solid #f55b02c5; /* Viền hình chữ nhật */
 }
 
 /* Hình tròn nằm trong hình chữ nhật */

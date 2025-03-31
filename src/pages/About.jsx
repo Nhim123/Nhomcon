@@ -9,11 +9,11 @@ import Services from '../components/Aboutcomponent/Services.jsx';
 const About = () => {
   return (
     <div>
-      <div className='w-full max-w-[1240px] mx-auto'>
-        <h1 className='flex justify-center py-3 uppercase font-palanquin font-bold text-3xl underline'>About us</h1>
-        <div className='flex justify-center font-poppin font-normal text-xl text-center	'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nemo corporis magni. Accusantium odit eveniet, magnam vitae tenetur sunt ex consequatur itaque. Illo tempore possimus laboriosam perferendis impedit hic quaerat! </div>
-
-        <div className='grid grid-cols-3 py-5 space-x-4'>
+      <div className='bg-AliceBlue'>
+        <div className='w-full max-w-[1240px] mx-auto'>
+          <h1 className='flex justify-center py-3 uppercase font-palanquin font-bold text-3xl underline text-sky-800'>About us</h1>
+          <div className='flex justify-center font-poppin font-normal text-xl text-center text-sky-800	'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nemo corporis magni. Accusantium odit eveniet, magnam vitae tenetur sunt ex consequatur itaque. Illo tempore possimus laboriosam perferendis impedit hic quaerat! </div>
+          <div className='grid grid-cols-3 py-5 space-x-4'>
           <Paper className='text-xl font-poppin font-thin' elevation={3} >
             <div className='px-2 pt-2 pb-8 space-y-4'>
             <p className='text-emerald-900 flex justify-center'>Import And Exporting Expert</p>
@@ -34,20 +34,24 @@ const About = () => {
             </div>
           </Paper>
         </div>
+        </div>
+      </div>
+      <div className='w-full max-w-[1240px] mx-auto'>
+        
 
         <div className='flex justify-center py-4'>
             <About1 position="left" />
         </div>
           
-        <div className='flex justify-center py-4'>
-            <About1 position="right" />
-        </div>
+        
         
         <div className='flex justify-center py-4'>
           <Services/>
         </div>
+      </div>
 
-        <div className='space-y-4'>
+      <div className='bg-slate-100'>
+        <div className='space-y-4 w-full max-w-[1240px] mx-auto my-4'>
           <p className='font-Nunito text-3xl font-bold pb-4 '>Who is our customer ?</p>
           <div className='grid grid-cols-3 space-x-5'>
             <div className='space-y-3 pb-8'>
@@ -66,7 +70,10 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+        </div>
+        <div className='flex justify-center py-4'>
+            <About1 position="right" />
+        </div>
     </div>
   )
 }

@@ -9,20 +9,22 @@ const Services = () => {
       description: 'From consulting, design, and development to operation and maintenance, we offer a full spectrum of software development services at every stage of the product lifecycle, meeting international quality standards. We flexibly cater to client needs, optimizing time and cost for each project.',
     },
     {
-      title: 'Software Consulting',
-      description: 'Our design team creates intuitive and visually appealing interfaces for an enhanced user experience.',
+      title: 'Supply Chain Management',
+      description: 'Ensuring efficient logistics, timely delivery, cost savings, optimized operations, and seamless business success with reliability.',
     },
     {
       title: 'Software Development',
       description: 'Leverage the power of cloud computing with our secure and scalable cloud services.',
     },
     {
-      title: 'Human Resources Solution',
-      description: 'We offer reliable maintenance and support to ensure your systems run smoothly at all times.',
+      title: 'Software Consulting',
+      description: 'Our design team creates intuitive and visually appealing interfaces for an enhanced user experience.',
     },
   ];
 
   return (
+    <div>
+    <p className='font-Nunito font-bold text-3xl text-gray-600 flex justify-center '>Our Services</p>
     <div className="grid grid-cols-4 gap-5 rounded-lg p-4 w-full max-w-[1240px] mx-auto">
       {services.map((service, index) => (
         <div
@@ -38,6 +40,8 @@ const Services = () => {
         </div>
       ))}
     </div>
+    </div>
+
   );
 };
 
