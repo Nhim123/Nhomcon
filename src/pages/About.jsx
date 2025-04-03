@@ -9,10 +9,10 @@ import Services from '../components/Aboutcomponent/Services.jsx';
 const About = () => {
   return (
     <div>
-      <div className='bg-AliceBlue'>
+      <div className='bg-customBlue'>
         <div className='w-full max-w-[1240px] mx-auto'>
-          <h1 className='flex justify-center py-3 uppercase font-palanquin font-bold text-3xl underline text-sky-800'>About us</h1>
-          <div className='flex justify-center font-poppin font-normal text-xl text-center text-sky-800	'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nemo corporis magni. Accusantium odit eveniet, magnam vitae tenetur sunt ex consequatur itaque. Illo tempore possimus laboriosam perferendis impedit hic quaerat! </div>
+          <h1 className='flex justify-center py-3 uppercase font-palanquin font-bold text-3xl underline text-white'>About us</h1>
+          <div className='flex justify-center font-poppin font-normal text-xl text-center text-white'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nemo corporis magni. Accusantium odit eveniet, magnam vitae tenetur sunt ex consequatur itaque. Illo tempore possimus laboriosam perferendis impedit hic quaerat! </div>
           <div className='grid grid-cols-3 py-5 space-x-4'>
           <Paper className='text-xl font-poppin font-thin' elevation={3} >
             <div className='px-2 pt-2 pb-8 space-y-4'>

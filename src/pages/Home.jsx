@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from '../components/Hero';
 import CountHome from '../components/Homecomponent/CountingHome';
 import Project from '../components/Homecomponent/Project';
+import Stepping from '../components/Homecomponent/Stepping';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <h1 className='font-medium text-wrap'>We understand businesses of all sizes have their unique IT needs and challenges. That’s why we bring together in-depth industry expertise and the latest IT innovations to deliver bespoke solutions and products that perfectly meet the needs and behavior of their users.</h1>
       </div>
       <Project />
+      <Stepping/>
     </div>
   )
 }
