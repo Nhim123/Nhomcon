@@ -5,12 +5,12 @@ const Stepping = () => {
   
     const stepping = [
       {
-        title: 'One-stop Software Development services',
-        description: 'From consulting, design, and development to operation and maintenance, we offer a full spectrum of software development services at every stage of the product lifecycle, meeting international quality standards. We flexibly cater to client needs, optimizing time and cost for each project.',
+        title: '',
+        description: '',
       },
       {
-        title: 'Supply Chain Management',
-        description: 'Ensuring efficient logistics, timely delivery, cost savings, optimized operations, and seamless business success with reliability.',
+        title: '',
+        description: '',
       },
       {
         title: '',
