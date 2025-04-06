@@ -3,16 +3,17 @@ import React from 'react';
 import { Paper } from '@mui/material';
 import About1 from '../components/Aboutcomponent/About1/About1.jsx';
 import Services from '../components/Aboutcomponent/Services.jsx';
-
+import { Nav }   from '../components/Nav.jsx';
 
 
 const About = () => {
   return (
     <div>
-      <div className='bg-customBlue'>
+              <Nav isHero={false} />
+      <div>
         <div className='w-full max-w-[1240px] mx-auto'>
-          <h1 className='flex justify-center py-3 uppercase font-palanquin font-bold text-3xl underline text-white'>About us</h1>
-          <div className='flex justify-center font-poppin font-normal text-xl text-center text-white'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nemo corporis magni. Accusantium odit eveniet, magnam vitae tenetur sunt ex consequatur itaque. Illo tempore possimus laboriosam perferendis impedit hic quaerat! </div>
+          <h1 className='flex justify-center py-3 uppercase font-palanquin font-bold text-3xl '>About us</h1>
+          <div className='flex justify-center font-poppin font-normal text-xl text-center '>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nemo corporis magni. Accusantium odit eveniet, magnam vitae tenetur sunt ex consequatur itaque. Illo tempore possimus laboriosam perferendis impedit hic quaerat! </div>
           <div className='grid grid-cols-3 py-5 space-x-4'>
           <Paper className='text-xl font-poppin font-thin' elevation={3} >
             <div className='px-2 pt-2 pb-8 space-y-4'>
