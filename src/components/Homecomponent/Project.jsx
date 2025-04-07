@@ -14,7 +14,7 @@ const Project = () => {
 
   return (
     <div className='mx-auto max-w-[1240px] py-5 border-collapse border-4 my-5 rounded-xl'>
-      <div className='grid grid-cols-4 font-bold font-Nunito text-base text-customBlue'>
+      <div className='grid grid-cols-4 font-bold font-Nunito text-base text-customBlue mb-[-22px]'>
         <div className='grid grid-rows-2 text-center space-y-4 p-4 hover:text-amber-600' onClick={() => toggleVisibility(1)}> 
           <img src={Sales} alt="Sales" className='w-20 h-20 mx-auto' />
           <h1>Supply Chain Management</h1>

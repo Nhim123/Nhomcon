@@ -9,7 +9,6 @@ const Home = () => {
     
     <div className='bg-white'>
       <Hero />
-      <CountHome/>
       <div className='text-center mx-auto font-Nunito max-w-[1240px] py-3 space-y-3 text-2x'>
         <p className='uppercase font-semibold text-gray-500'>WHAT WE'RE OFFERING TO OUR CLIENTS</p>
         <p className='font-bold text-2xl text-gray-500'>Expert IT Software Development Service for Businesses of All Sizes</p>

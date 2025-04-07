@@ -27,6 +27,7 @@ export default {
         Rubik: ['Rubik', 'sans-serif'],
         NunitoSans: ['Nunito Sans', 'sans-serif'],
         Nunito: ['Nunito', 'sans-serif'],
+        Gilory: ['Gilroy', 'sans-serif'],
       },
       colors: {
         'primary': "#ECEEFF",
