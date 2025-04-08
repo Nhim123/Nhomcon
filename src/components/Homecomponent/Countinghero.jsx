@@ -18,43 +18,45 @@ const Counter = ({ target }) => {
   }, [isComplete]);
 
   return (
-    <div className='font-bold text-2xl'>  
+    <div className='font-bold text-2xl relative'>  
       <animated.span>
-      {number.to((n) => Math.floor(n))}
+        {number.to((n) => Math.floor(n))}
       </animated.span>
-
-      <animated.span>
-      {isComplete ? ' +' : ''}
-      </animated.span>
+      {isComplete && (
+        <animated.span className='absolute -top-3  text-xl'>
+          +
+        </animated.span>
+      )}
     </div>
-    
   );
 };
 
 const CountingHero = () => {
   return (
     <div>
-       
-      
       <div className='bg-gradient-to-r from-black to-blue-900 opacity-90'> {/* Black-blue gradient background */}
           <div className='mx-auto max-w-[1240px]'>
-            <div className='grid grid-cols-3 font-poppin text-white text-3xl py-4'>  
-                  <div className='grid grid-row-2 text-center'>
+            <div className='flex flex-cols font-poppin text-white text-3xl py-4 space-x-16 justify-center'>  
+                  <div className='flex flex-rows space-x-5 items-center'>
                       <Counter target={40}/>
-                      <p>Global Clients</p>
+                      <p className='text-2xl'>Successful Projects </p>
                    </div>
               
-                  <div className='grid grid-row-2 text-center'>
-                      <Counter target={650}/>
-                      <p>Partnership</p>
+                  <div className='flex flex-rows space-x-5 items-center'>
+                      <Counter target={50}/>
+                      <p className='text-2xl'>Employees</p>
                   </div>
  
-                  <div className='grid grid-row-2 text-center'>
-                        <Counter target={700} />
-                        <p>Talents</p>
+                  <div className='flex flex-rows space-x-5 items-center'>
+                        <Counter target={5} />
+                        <p className='text-2xl'>Years Of Experience</p>
                   </div>
-            
+
+                  <div className='flex flex-rows space-x-5 items-center'>
+                        <Counter target={20} />
+                        <p className='text-2xl'>Long-term Partnerships</p>
                   </div>
+            </div>
             </div>
         </div>        
       </div>

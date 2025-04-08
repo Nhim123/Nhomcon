@@ -5,20 +5,20 @@ const Stepping = () => {
   
     const stepping = [
       {
-        title: '',
-        description: '',
+        title: 'Requirement Reception',
+        description: 'Receive and identify the staffing needs for the project.',
       },
       {
-        title: '',
-        description: '',
+        title: 'Personnel Proposal',
+        description: 'Develop a detailed proposal on positions, plans, and budget for staffing.',
       },
       {
-        title: '',
-        description: '.',
+        title: 'Interview Selection',
+        description: 'Clients interview and evaluate the personnels competence, experience, and qualities.'
       },
       {
-        title: '',
-        description: '',
+        title: 'Contract Signing',
+        description: 'Sign the staffing contract between HungAnh and the client.',
       },
     ];
 
@@ -29,16 +29,24 @@ const Stepping = () => {
       {stepping.map((stepping, index) => (
         <div
           key={index}
-          className={`flex flex-col items-start justify-start font-Nunito space-y-3 p-4 rounded-lg border-2 ${
+          className={`flex flex-col items-start justify-start font-Nunito space-y-5 p-4 rounded-lg border ${
             hoveredIndex === index ? 'bg-blue-500 text-white border-blue-700' : 'border-gray-300'
           }`}
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
-          <p className="text-2xl font-popin font-semibold align-top w-full">
-            {index + 1}. {stepping.title}
+          <div className='flex items-center justify-center w-full'>
+            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500 text-white font-bold text-xl">
+              {index + 1}
+            </div>
+          </div>
+          
+          <p className="text-xl font-medium align-top text-center w-full">
+            {stepping.title}
           </p>
-          <h1 className="text-justify w-full align-bottom">{stepping.description}</h1>
+          <h1 className="text-center w-full align-bottom leading-relaxed">
+            {stepping.description}
+          </h1>
         </div>
       ))}
     </div>

@@ -36,25 +36,33 @@ const Project = () => {
         {visibleProject === 1 && (
           <>
             <p>Our supply chain management services optimize logistics, reduce costs, and enhance efficiency. We streamline procurement, inventory, and distribution, ensuring seamless operations. By leveraging data-driven insights and automation, we improve visibility, minimize risks, and boost customer satisfaction. Partner with us for a smarter, more resilient supply chain that drives business success.</p>
-            <Link to="/services/supplychain" className="text-blue-500 underline">Read More</Link>
+            <div className="mt-4">
+              <Link to="/services/supplychain" className="px-4 py-2 border-2 border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">Read More</Link>
+            </div>
           </>
         )}
         {visibleProject === 2 && (
           <>
             <p>Our software consulting services help businesses optimize technology, improve efficiency, and drive innovation. We provide expert guidance on software development, system integration, and digital transformation. By understanding your unique needs, we deliver tailored solutions that enhance performance, reduce costs, and ensure scalability for long-term success. Partner with us today!</p>
-            <Link to="/services/ai" className="text-blue-500 underline">Read More</Link>
+            <div className="mt-4">
+              <Link to="/services/ai" className="px-4 py-2 border-2 border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">Read More</Link>
+            </div>
           </>
         )}
         {visibleProject === 3 && (
           <>
             <p>Our software development services deliver custom solutions tailored to your business needs. We design, build, and deploy scalable, high-performance applications that enhance efficiency and drive growth. From web and mobile apps to enterprise systems, we ensure seamless integration, security, and innovation. Let us turn your ideas into powerful software solutions.</p>
-            <Link to="/services/webapp" className="text-blue-500 underline">Read More</Link>
+            <div className="mt-4">
+              <Link to="/services/webapp" className="px-4 py-2 border-2 border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">Read More</Link>
+            </div>
           </>
         )}
         {visibleProject === 4 && (
           <>
             <p>Our Human Resources IT solutions streamline HR processes, improve workforce management, and enhance employee experience. We offer automated payroll, recruitment, performance tracking, and compliance management. By integrating advanced technology, we boost efficiency, reduce administrative burdens, and enable data-driven decision-making. Empower your HR team with innovative, scalable, and secure solutions.</p>
-            <Link to="/services/mobileapp" className="text-blue-500 underline">Read More</Link>
+            <div className="mt-4">
+              <Link to="/services/mobileapp" className="px-4 py-2 border-2 border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">Read More</Link>
+            </div>
           </>
         )}
       </div>
