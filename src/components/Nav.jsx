@@ -19,7 +19,7 @@ export const Nav = ({ isHero = false }) => {
   };
 
   return (
-    <div className={`${isHero ? 'bg-white' : 'mt-[100px] bg-white'}`}>
+    <div className={`${isHero ? 'bg-whiteea5f9b7152eff29464d35da306992cfe561621e4' : 'mt-[100px] bg-white'}`}>
       <nav className='fixed top-0 left-0 w-full shadow-md z-50'>
         <div className='grid grid-cols-2 max-container py-4 w-full max-w-[1240px] mx-auto'>
           <a href='/'>
