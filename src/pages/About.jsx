@@ -9,8 +9,7 @@ import { Nav }   from '../components/Nav.jsx';
 const About = () => {
   return (
     <div>
-              <Nav isHero={false} />
-      <div>
+      <div className='bg-customBlue'>
         <div className='w-full max-w-[1240px] mx-auto'>
           <h1 className='flex justify-center py-3 uppercase font-palanquin font-bold text-3xl '>About us</h1>
           <div className='flex justify-center font-poppin font-normal text-xl text-center '>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nemo corporis magni. Accusantium odit eveniet, magnam vitae tenetur sunt ex consequatur itaque. Illo tempore possimus laboriosam perferendis impedit hic quaerat! </div>
