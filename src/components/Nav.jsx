@@ -31,7 +31,7 @@ export const Nav = () => {
             <div className='relative' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
               <a href='/services' className='text-xl font-semibold'>Services</a>
               {dropdown && (
-                <ul className='absolute top-full left-0 bg-white shadow-md whitespace-nowrap'>
+                <ul className='absolute top-full left-0 bg-white shadow-md whitespace-nowrap border-t z-[-1]'>
                   <a href='/services/supplychain' className='block px-4 pt-8 pb-2'>Supply Chain Management</a>
                   <a href='/services/ai' className='block px-4 py-2'>Artificial Intelligence</a>
                   <a href='/services/webapp' className='block px-4 py-2'>Website Development</a>

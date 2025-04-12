@@ -1,25 +1,60 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion'; // Import framer-motion
 import Hero from '../components/Hero';
-import CountHome from '../components/Homecomponent/CountingHome';
 import Project from '../components/Homecomponent/Project';
 import Stepping from '../components/Homecomponent/Stepping';
+import { Carousel } from '../components/Carousel'; // Import Carousel component
 
 const Home = () => {
+  const fadeIn = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1.0 } },
+  };
+
   return (
-    
     <div className='bg-white'>
       <Hero />
-
-      
-      <div className='text-center mx-auto font-Nunito max-w-[1240px] py-3 space-y-3 text-2x'>
-        <p className='uppercase font-semibold text-gray-500'>WHAT WE'RE OFFERING TO OUR CLIENTS</p>
+      <motion.div
+        className='text-center mx-auto font-Nunito max-w-[1240px] pb-8 space-y-3 text-2x pt-20'
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeIn}
+      >
+        <p className='uppercase font-semibold text-xl text-gray-500'>WHAT WE'RE OFFERING TO OUR CLIENTS</p>
         <p className='font-bold text-2xl text-gray-500'>Expert IT Software Development Service for Businesses of All Sizes</p>
         <h1 className='font-medium text-wrap'>We understand businesses of all sizes have their unique IT needs and challenges. That’s why we bring together in-depth industry expertise and the latest IT innovations to deliver bespoke solutions and products that perfectly meet the needs and behavior of their users.</h1>
-      </div>
-      <Project />
-      <Stepping/>
+      </motion.div>
+       {/* Added Carousel component */}
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeIn}
+      >
+        <Project />
+      </motion.div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeIn}
+      >
+        <Stepping />
+      </motion.div>
+      
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeIn}
+        className='text-center mx-auto font-Nunito max-w-[870px] pb-8 space-y-3 text-2x pt-20'
+      >
+        <Carousel />
+      </motion.div>
+      
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

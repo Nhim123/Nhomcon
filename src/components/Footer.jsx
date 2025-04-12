@@ -6,7 +6,7 @@ import LinkedInLogo from '../assets/LinkedInLogo.svg';
 
 export const Footer = () => {
   return (
-    <footer className='bg-customBlue'>
+    <footer className='bg-Blue1'>
       <div className='max-w-[1240px] mx-auto py-5'>
         <div className="flex items-center pt-5">
             <img src={Logosmall} alt="Logo" className="h-12 mr-3" />
