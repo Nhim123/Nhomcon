@@ -12,7 +12,7 @@ const Counter = ({ target }) => {
   });
 
   useEffect(() => {
-    if (isComplete) {
+    if (isComplete) { 
       // Change color or perform any other action when the animation is complete
     }
   }, [isComplete]);

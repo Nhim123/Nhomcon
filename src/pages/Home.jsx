@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import Project from '../components/Homecomponent/Project';
 import Stepping from '../components/Homecomponent/Stepping';
 import { Carousel } from '../components/Carousel'; // Import Carousel component
+import CardHome from '../components/Homecomponent/CardHome';
 
 const Home = () => {
   const fadeIn = {
@@ -12,8 +13,10 @@ const Home = () => {
   };
 
   return (
-    <div className='bg-white'>
+    <div className='bg-white space-y-10'>
       <Hero />
+
+      
       <motion.div
         className='text-center mx-auto font-Nunito max-w-[1240px] pb-8 space-y-3 text-2x pt-20'
         initial="hidden"
@@ -26,6 +29,17 @@ const Home = () => {
         <h1 className='font-medium text-wrap'>We understand businesses of all sizes have their unique IT needs and challenges. That’s why we bring together in-depth industry expertise and the latest IT innovations to deliver bespoke solutions and products that perfectly meet the needs and behavior of their users.</h1>
       </motion.div>
        {/* Added Carousel component */}
+
+       <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeIn}
+      >
+        <CardHome />
+      </motion.div>
+      
+       
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -42,7 +56,7 @@ const Home = () => {
       >
         <Stepping />
       </motion.div>
-      
+
       <motion.div
         initial="hidden"
         whileInView="visible"
