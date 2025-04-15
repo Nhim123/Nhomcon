@@ -1,10 +1,10 @@
-<<<<<<< HEAD
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Hero1 from '../assets/Home/hero1.png';
 import Hero2 from '../assets/Home/hero2.png';
+import CountingHero from './Homecomponent/Countinghero.jsx';
 
 const Hero = () => {
   const images = [
@@ -13,7 +13,7 @@ const Hero = () => {
   ];
 
   const settings = {
-    dots: true,
+    dots: false, // Disable dots
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -23,39 +23,31 @@ const Hero = () => {
   };
 
   return (
-    <div className='text-black'>
-      <div className='max-w-[800px] mt-[-96px] w-full h-96 mx-auto text-center flex flex-col justify-center'>
-        <p className='text-[#34d399] font-bold p-2'>GROWING WITH DATA ANALYTICS</p>
-        <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6'>Grow with data.</h1>
-        <div>
-          <p className='md:text-5xl sm:text-4xl text-xl font-bold'>Fast, flexible financing for</p>
-        </div>
-        <div className='mt-6'>
-        <Slider {...settings}>
-          {images.map((image, index) => (
-            <div key={index} className="flex justify-center items-center">
-              <img 
-                src={image} 
-                alt={`Slide ${index + 1}`} 
-                className='w-full h-64 object-contain' // Sử dụng object-contain để giữ hình ảnh trong vùng chứa
-              />
-            </div>
+    <div className=''>
+      <div className='relative mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center'> {/* Adjust height to full screen */}
+        <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6 z-10 text-white font-Gilory'>Collaborate with Hung Anh's elite team </h1>
+        <p className='md:text-3xl sm:text-2xl font-semibold z-10 text-white font-Nunito'>Innovating in technology, mastering global trade — your trusted partner in growth and success</p>
+        <div className='absolute inset-0'>
+          <div className='absolute inset-0 bg-blue-500 opacity-90 blur-sm z-5'> {/* Blue blur mask */}
+          <Slider {...settings}>
+            {images.map((image, index) => (
+              <div key={index} className="relative">
+                <img 
+                  src={image} 
+                  alt={`Slide ${index + 1}`} 
+                  className='w-full h-full object-cover' 
+                />
+              </div>
             ))}
-        </Slider>
-        </div>
-      </div>
-=======
-    <div className='text-black'>
-        <div className='max-w-[800px] mt-[-96px] w-full h-96 mx-auto text-center flex flex-col justify-center'>
-          <p className='text-[#34d399] font-bold p-2'>GROWING WITH DATA ANALYTICS</p>
-          <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6'>Grow with date.</h1>
-          <div>
-            <p className='md:text-5xl sm:text-4xl text-xl font-bold'>Fast, flexible financing for</p>
+          </Slider>
           </div>
         </div>
->>>>>>> parent of ea5f9b7 (4.4.2025)
+        <div className='absolute bottom-0 w-full z-10'> {/* Place CountingHero at the bottom */}
+          <CountingHero />
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
