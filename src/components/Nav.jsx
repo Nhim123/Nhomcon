@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import  Logo  from "../assets/Logo.svg";
-import { AiOutlineMenu , AiOutlineClose } from "react-icons/ai";
+import Logo from "../assets/Logo.svg";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 export const Nav = () => {
   const [nav, setNav] = useState(false);
-  const [dropdown, setDropdown] = useState(false); // Added dropdown state
+  const [dropdown, setDropdown] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
@@ -31,7 +31,8 @@ export const Nav = () => {
             <div className='relative' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
               <a href='/services' className='text-xl font-semibold'>Services</a>
               {dropdown && (
-                <ul className='absolute top-full left-0 bg-white shadow-md whitespace-nowrap border-t z-[-1]'>
+                <ul className='absolute top-[100%] left-0 bg-white shadow-md whitespace-nowrap z-[100]'>
+                  {/* Adjusted z-index to 100 to display above the navbar */}
                   <a href='/services/supplychain' className='block px-4 pt-8 pb-2'>Supply Chain Management</a>
                   <a href='/services/ai' className='block px-4 py-2'>Artificial Intelligence</a>
                   <a href='/services/webapp' className='block px-4 py-2'>Website Development</a>
