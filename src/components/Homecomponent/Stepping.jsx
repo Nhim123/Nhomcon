@@ -24,7 +24,7 @@ const Stepping = () => {
 
   return (
     <div>
-    <p className='font-Nunito font-bold text-3xl text-gray-600 flex justify-center '>Our Services</p>
+    <p className='max-w-[1240px] mx-auto font-Nunito font-bold text-3xl text-gray-600 flex justify-start '>Our Streamlined 4-Step Process</p>
     <div className="grid grid-cols-4 gap-5 rounded-lg p-4 w-full max-w-[1240px] mx-auto">
       {stepping.map((stepping, index) => (
         <div

@@ -18,12 +18,12 @@ const Counter = ({ target }) => {
   }, [isComplete]);
 
   return (
-    <div className='font-bold text-2xl relative'>  
+    <div className='font-bold text-3xl relative'>  
       <animated.span>
         {number.to((n) => Math.floor(n))}
       </animated.span>
       {isComplete && (
-        <animated.span className='absolute -top-3  text-xl'>
+        <animated.span className='absolute -top-1  text-2xl'>
           +
         </animated.span>
       )}
@@ -35,26 +35,26 @@ const CountingHero = () => {
   return (
     <div>
       <div className='bg-gradient-to-r from-black to-blue-900 opacity-90'> {/* Black-blue gradient background */}
-          <div className='mx-auto max-w-[1240px]'>
+          <div className='mx-auto max-w-[1240px] h-24'>
             <div className='flex flex-cols font-poppin text-white text-3xl py-4 space-x-16 justify-center'>  
                   <div className='flex flex-rows space-x-5 items-center'>
                       <Counter target={40}/>
-                      <p className='text-2xl'>Successful Projects </p>
+                      <p className='text-3xl'>Successful Projects </p>
                    </div>
               
                   <div className='flex flex-rows space-x-5 items-center'>
                       <Counter target={50}/>
-                      <p className='text-2xl'>Employees</p>
+                      <p className='text-3xl'>Talents</p>
                   </div>
  
                   <div className='flex flex-rows space-x-5 items-center'>
                         <Counter target={5} />
-                        <p className='text-2xl'>Years Of Experience</p>
+                        <p className='text-3xl'>Years Of Experience</p>
                   </div>
 
                   <div className='flex flex-rows space-x-5 items-center'>
                         <Counter target={20} />
-                        <p className='text-2xl'>Long-term Partnerships</p>
+                        <p className='text-3xl'>Long-term Partnerships</p>
                   </div>
             </div>
             </div>
