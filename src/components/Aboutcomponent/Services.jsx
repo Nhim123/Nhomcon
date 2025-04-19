@@ -30,7 +30,7 @@ const Services = () => {
         <div
           key={index}
           className={`flex flex-col items-start justify-start font-Nunito space-y-3 p-4 rounded-lg border-2 ${
-            hoveredIndex === index ? 'bg-blue-500 text-white border-blue-700' : 'border-gray-300'
+            hoveredIndex === index ? 'bg-Blue1 text-white border-sky-800' : 'border-gray-300'
           }`}
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
