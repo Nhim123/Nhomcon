@@ -17,9 +17,9 @@ const Project = () => {
       <div className='mx-auto max-w-[1240px]'>
         <div className='flex items-center'>
             <hr className='border-gray-800 w-[100px] border-3 mr-4' />
-            <p className='font-Nunito text-2xl font-bold text-gray-700'>Our Service</p> 
+            <p className='font-Nunito text-3xl font-bold text-gray-700'>Our Service</p> 
         </div>
-    </div>
+      </div>
       <div className='mx-auto max-w-[1240px] py-5 border-collapse border-4 my-5 rounded-xl'>
       <div className='grid grid-cols-4 font-bold font-Nunito text-base text-customBlue mb-[-22px]'>
         <div className='grid grid-rows-2 text-center space-y-4 p-4 hover:text-amber-600' onClick={() => toggleVisibility(1)}> 

@@ -3,9 +3,7 @@ import React from 'react';
 import { Paper } from '@mui/material';
 import About1 from '../components/Aboutcomponent/About1/About1.jsx';
 import Services from '../components/Aboutcomponent/Services.jsx';
-
-
-
+import Form from '../components/Aboutcomponent/Form.jsx';
 const About = () => {
   return (
     <div>
@@ -74,6 +72,8 @@ const About = () => {
         <div className='flex justify-center py-4'>
             <About1 position="right" />
         </div>
+
+        <Form/>
     </div>
   )
 }

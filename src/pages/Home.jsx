@@ -57,12 +57,28 @@ const Home = () => {
         <Stepping />
       </motion.div>
 
+
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeIn}>
+<div className='mx-auto max-w-[1240px]'>
+        <div className='flex items-center'>
+          <hr className='border-gray-800 w-[100px] border-3 mr-4' />
+          <p className='font-Nunito text-3xl font-bold text-gray-700'>Our Partner</p> 
+        </div>
+      </div>
+        </motion.div>
+      
+      
+      
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={fadeIn}
-        className='text-center mx-auto font-Nunito max-w-[870px] pb-8 space-y-3 text-2x pt-20'
+        className='text-center mx-auto font-Nunito max-w-[870px] pb-8 text-2xl'
       >
         <Carousel />
       </motion.div>
